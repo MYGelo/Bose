@@ -1,0 +1,57 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #191919;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 100px;
+  height: 20px;
+}
+
+.header__list {
+  max-height: 70px;
+}
+
+.btn__menu {
+  width: 24px;
+  height: 24px;
+  background-color: aquamarine;
+}
+
+.header__list--mobil {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo-wrapper {
+  max-height: 70px;
+  overflow: hidden;
+}/*# sourceMappingURL=index.css.map */

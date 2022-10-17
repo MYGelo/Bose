@@ -1,0 +1,29 @@
+.logo {
+    width: 100px;
+    height: 20px;
+}
+
+.header__list {
+    @extend %list;
+    max-height: 70px;
+}
+
+.btn__menu {
+    width: 24px;
+    height: 24px;
+    background-color: aquamarine;
+}
+
+.header__list--mobil {
+    @media screen and (max-width:768px) {
+        
+    }
+    position: fixed;
+    top: 0;
+    left: 0;    
+}
+
+.logo-wrapper {
+    max-height: 70px;
+    overflow: hidden;
+}
