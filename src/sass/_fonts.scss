@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Semibold.eot');
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('../fonts/Gilroy/Gilroy-Semibold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/Roboto\ Condensed/RobotoCondensed-Regular.ttf');
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'),
+    url('../fonts/Roboto\ Condensed/RobotoCondensed-Regular.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
