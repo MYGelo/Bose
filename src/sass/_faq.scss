@@ -1,0 +1,83 @@
+.faq {
+    @extend %section;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.faq__title {
+    @extend %section-title;
+}
+
+.faq__list {
+    @extend %list;
+    counter-reset: item;
+    
+}
+
+.faq__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    padding-bottom: 24px;
+    
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    
+    border-bottom: 2px solid $bcg-icon-faq;
+
+    &::before {
+        display: block;
+        content: "0" counter(item);
+        counter-increment: item;
+        font-family: 'Roboto Condensed';
+        line-height: 0.7;
+        margin-right: 16px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        margin-left: auto;
+        
+        width: 32px;
+        height: 32px;
+
+        background-image: url(../images/question-mark.svg);
+        background-size: 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+}
+
+
+.faq__text {
+
+    max-width: 200px;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 1.28;
+    
+    @media screen and (min-width:480px) {
+        min-width: 200px;
+
+    }
+
+    // @media screen and (min-width:768px) {
+    //     width: 768px;
+
+    // }
+
+    // @media screen and (min-width:1440px) {
+    //     width: 1440px;
+
+    // }
+
+}
