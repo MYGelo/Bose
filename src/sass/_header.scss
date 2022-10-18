@@ -3,27 +3,33 @@
     height: 20px;
 }
 
-.header__list {
+.logo-wrapper {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.nav__list {
     @extend %list;
     max-height: 70px;
 }
 
-.btn__menu {
+.btn-menu-open {
+    margin: 0;
     width: 24px;
     height: 24px;
     background-color: aquamarine;
 }
 
-.header__list--mobil {
-    @media screen and (max-width:768px) {
-        
+.nav {
+    @media screen and (max-width:1139px) {
+        display: none;
     }
-    position: fixed;
-    top: 0;
-    left: 0;    
 }
 
-.logo-wrapper {
-    max-height: 70px;
-    overflow: hidden;
+.header-mobile {    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
 }

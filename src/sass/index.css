@@ -1,5 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.header__list {
+.mobile__list, .nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -36,22 +36,53 @@ img {
   height: 20px;
 }
 
-.header__list {
+.logo-wrapper {
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.nav__list {
   max-height: 70px;
 }
 
-.btn__menu {
+.btn-menu-open {
+  margin: 0;
   width: 24px;
   height: 24px;
   background-color: aquamarine;
 }
 
-.header__list--mobil {
+@media screen and (max-width: 1139px) {
+  .nav {
+    display: none;
+  }
+}
+
+.header-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.btn-menu-close {
+  width: 24px;
+  height: 24px;
+  background-color: rgb(236, 15, 15);
+}
+
+.mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  background: rgb(108, 150, 136);
+  transition: transform 250ms linear;
 }
-.logo-wrapper {
-  max-height: 70px;
-  overflow: hidden;
+
+.mobile-menu.is-open {
+  transform: translateY(0);
 }/*# sourceMappingURL=index.css.map */
