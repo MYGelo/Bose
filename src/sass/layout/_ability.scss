@@ -1,0 +1,47 @@
+.page-ability__wrapper {
+  padding: 20px;
+  @media screen and (min-width: 768px) {
+      padding: 60px;
+  }
+}
+
+
+.page-ability__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #E7E7E7;
+  margin-bottom: 32px;
+
+}
+
+
+.page-ability__list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-ability__item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-bottom: 16px;
+
+}
+
+.page-ability__item::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #DF3D3A;
+  border-radius: 10px;
+  margin-right: 27px;
+
+
+}
