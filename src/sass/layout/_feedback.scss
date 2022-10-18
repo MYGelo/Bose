@@ -1,17 +1,18 @@
 .feedback {
+  @extend %section;
   display: flex;
   flex-direction: column;
 
-  // padding: 18px;
+  padding: 18px;
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-    // padding-left: 62px;
-    // padding-right: 60px;
+    padding-left: 62px;
+    padding-right: 60px;
   }
 
   @media screen and (min-width: 1440px) {
-    // padding-left: 190px;
-    // padding-right: 190px;
+    padding-left: 190px;
+    padding-right: 190px;
 
     flex-direction: row;
   }
@@ -73,7 +74,7 @@
   }
   &__items {
     &:focus-within {
-      border-color: #df3d3a;
+      border-color: $accent-color;
     }
 
     &:not(:last-child) {
@@ -88,7 +89,7 @@
     padding-bottom: 16px;
 
     border: 1px solid transparent;
-    border-bottom: 2px solid #fffc;
+    border-bottom: 2px solid $primary-text-color;
 
     color: $primary-text-color;
     background-color: $bcg-color;
@@ -118,7 +119,7 @@
   &__link {
     margin-left: 5px;
 
-    color: #ffffffcc;
+    color: $primary-text-color;
   }
   &__checkbox {
     display: flex;
@@ -144,30 +145,37 @@
     opacity: 0;
     &:checked + .feedback__check {
       content: ' ';
-      // background-image: url('../images/icon-check.svg');
+      background-image: url('../images/check-true.svg');
 
-      border: 2px solid green;
+      width: 33px;
+      height: 31px;
+
+      margin-right: 21px;
+      margin-top: 0;
     }
   }
   &__check {
+    margin-top: 3px;
+
     width: 30px;
     height: 28px;
 
+    background-image: url('../images/check-false.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
     margin-right: 24px;
-    border: 2px solid #e9edfa;
   }
+}
 
-  &__button {
-    width: 280px;
-    height: 58px;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: $primary-text-color;
 
-    color: #ffffffcc;
-    background-color: $bcg-color;
-    border: 1px solid #df3d3a;
-
-    @media screen and (min-width: 1440px) {
-      width: 510px;
-      height: 68px;
-    }
-  }
+  -webkit-box-shadow: 0 0 0px 1000px $bcg-color inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:hover::-webkit-input-placeholder {
+  color: $primary-text-color;
 }
