@@ -14,10 +14,14 @@
 }
 
 .btn-menu-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    width: 24px;
-    height: 24px;
-    background-color: aquamarine;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: $bcg-color;
 }
 
 .nav {
