@@ -1,50 +1,59 @@
-<section class="section feedback">
-  <div>
-    <h1 class="feedback__title">Feedback</h1>
-    <p class="feedback__text">
-      We'll help you find the right headphones for you.
-    </p>
-  </div>
+<section class="section">
+  <div class="feedback container">
+    <div>
+      <h1 class="feedback__title">Feedback</h1>
+      <p class="feedback__text">
+        We'll help you find the right headphones for you.
+      </p>
+    </div>
 
-  <div class="feedback__label--margin">
-    <label class="feedback__field" for="input-name">
-      <input
-        class="feedback__form"
-        placeholder="Your name"
-        type="text"
-        name="name"
-        required
-        id="input-name"
-      />
-    </label>
-    <label class="feedback__field" for="input-email">
-      <input
-        class="feedback__form"
-        placeholder="Your e-mail"
-        type="text"
-        name="email"
-        required
-        id="input-email"
-      />
-    </label>
-    <label class="feedback__field" for="input-massage">
-      <textarea
-        class="feedback__form feedback__area"
-        name="feedback"
-        placeholder="Send us a massage"
-      ></textarea>
-    </label>
+    <form class="feedback__label--margin">
+      <label class="feedback__field" for="input-name">
+        <input
+          class="feedback__form"
+          placeholder="Your name"
+          type="text"
+          name="name"
+          required
+          id="input-name"
+          minlength="4"
+        />
+      </label>
+      <label class="feedback__field" for="input-email">
+        <input
+          class="feedback__form"
+          placeholder="Your e-mail"
+          type="email"
+          name="email"
+          required
+          id="input-email"
+        />
+      </label>
+      <label class="feedback__field" for="input-massage">
+        <textarea
+          class="feedback__form feedback__area"
+          name="feedback"
+          placeholder="Send us a massage"
+        ></textarea>
+      </label>
 
-    <label class="feedback__checkbox">
-      <input
-        class="feedback__check--hide"
-        type="checkbox"
-        name="check"
-        value=" "
-      />
-      <span class="feedback__check"></span> agree to the
-      <span><a href="#" class="feedback__link">privacy policy</a></span>
-    </label>
-    <button class="feedback__button" type="submit">Send</button>
+      <label class="feedback__checkbox">
+        <input
+          class="feedback__check--hide"
+          type="checkbox"
+          name="checkbox"
+          value=" "
+          required
+        />
+        <span class="feedback__check"></span> agree to the
+        <span><a href="#" class="feedback__link">privacy policy</a></span>
+      </label>
+      <button
+        class="btn__item-feedback btn__item-feedback--dimensions draw draw.meet"
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
   </div>
 </section>
