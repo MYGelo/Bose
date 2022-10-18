@@ -1,6 +1,8 @@
 .logo {
     width: 100px;
     height: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 .logo-wrapper {
@@ -22,19 +24,64 @@
     height: 40px;
     border: none;
     background: $bcg-color;
+    @media screen and (min-width:1440px){
+        display: none;
+    }
 }
 
 .nav {
     @media screen and (max-width:1439px) {
         display: none;
     }
+    @media screen and (min-width:1440px){
+         &__item:not(:last-child) {
+        margin-right: 77px;
+    }
+    }   
+}
+
+.nav__list {
+    margin-right: 80px;
+    @media screen and (min-width:1440px){
+        display: flex;
+        font-size: 16px;
+        line-height: 1.18;
+    }    
 }
 
 .header-mobile {    
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media screen and (max-width:1439px){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media screen and (min-width:768px) {
+        height: 100px;
+        margin-left: 35px;
+        max-width: 648px;
+    }
+    @media screen and (min-width:1440px){
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo__icon{
+    @media screen and (min-width:1440px) {
+        width: 130px;
+        height: 16px;
+    }
+}
+
+.container--header {
+    @media screen and (min-width:1440px) {
+        display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    justify-content: space-between;
+    height: 120px;
+    }    
 }
