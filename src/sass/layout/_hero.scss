@@ -3,4 +3,38 @@
 font-size: 14px;
 line-height: 1.28;
 color: $primary-text-color;
+    &--first {
+        max-width: 222px;
+        margin-bottom: 16px
+    }
+    &--second {
+        max-width: 93px;
+        margin-bottom: 32px;
+    }
+
+}
+
+.hero-title {
+    max-width: 234px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color:$secondary-text-color;
+    margin-bottom: 32px    
+}
+
+.hero-btn {
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    height: 58px;
+    text-transform: uppercase;
+    background: #DF3D3A;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
 }
