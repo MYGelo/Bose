@@ -8,40 +8,161 @@
     }
 
     @media screen and (min-width:1440px) {
-        padding-left: 190px;
-        padding-right: 190px;
+        padding-left: 0;
+        padding-right: 112px;
 
     }
 }
+
+.reviews__slider {
+    position: relative;
+
+}
+
+.reviews__slider .swiper-pagination {
+    position: static;
+    display: flex;
+    width: fit-content;
+   
+    @media screen and (min-width:1440px) {
+    
+        position: absolute;
+        left: 1070px;
+        bottom: 0;
+
+    }
+}
+
+.reviews__slider .swiper-pagination-bullet {
+    position: relative;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $accent-color;
+    opacity: 0.2;
+    background-color: transparent;
+    border: 0 solid;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+
+    &:not(:last-child) {
+        margin-right: 39px;
+    }
+    
+    &:not(:last-child)::after {
+        position: absolute;
+        content: "";
+
+        height: 1px;
+        width: 5px;
+        background-color: $accent-color;
+
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+
+        @media screen and (min-width:1440px) {
+
+            width: 7px;
+
+        }
+
+    }
+
+    @media screen and (min-width:1440px) {
+
+        font-size: 28px;
+
+    }
+
+}
+
+.reviews__slider .swiper-pagination-bullet-active {
+    
+    opacity: 1;
+
+    &::after {
+        opacity: 1;
+    }
+}
+
+
 
 
 .reviews__title {
     @extend %section-title;
+
+    @media screen and (min-width:1440px) {
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+        left: 1070px;
+        top: 0;
+
+        z-index: 9999;
+
+
+    }
+
 }
 
-.reviews__video-wrapper {
+.swiper-slide {
+
+    @media screen and (min-width:1440px) {
+        display: flex;
+    
+    }
+
+}
+
+.slider__video-wrapper {
     margin-bottom: 32px;
+    
+    @media screen and (min-width:1440px) {
+        margin-bottom: 0;
+
+    }
+
 }
 
-.reviews__video--size {
-    width: 100%;
-    height: 100%;
+.reviews__video {
 
-    min-width: 280px;
-    min-height: 180px;
+    height: auto;
+    width: 100%;
+
+    @media screen and (min-width:480px) and (max-width:769.98px) {
+        width: 450px;
+        height: 254px;
+    }
 
     @media screen and (min-width:768px) {
-        min-width: 648px;
-        min-height: 417px;
+        width: 648px;
+        height: 417px;
     }
+
 
     @media screen and (min-width:1440px) {
         width: 920px;
         height: 590px;
+        margin-bottom: 0;
 
     }
 
+}
 
+.slider__descr-wrapper {
+
+    @media screen and (min-width:1440px) {
+        
+        margin-top: 115px;
+        margin-left: 150px;
+    
+    }
+    
 }
 
 .reviews__subtitle {
@@ -72,13 +193,13 @@
     font-size: 14px;
     line-height: 1.28;
 
-    @media screen and (min-width:321px) and (max-width:767.98px) {
+    @media screen and (min-width:321px) and (max-width:1439.98px) {
         max-width: 530px;
 
     }
 
     @media screen and (min-width:768px) {
-        max-width: 530px;
+
         font-size: 16px;
         line-height: 1.43;
     }
@@ -91,65 +212,5 @@
         line-height: 1.45;
 
     }
-
-}
-
-.pagination__list {
-    @extend %list;
-
-    display: flex;
-}
-
-.pagination__item {
-    position: relative;
-
-    &:not(:last-child) {
-        margin-right: 39px;
-    }
-
-    &:not(:last-child)::after {
-        position: absolute;
-        content: "";
-
-        height: 1px;
-        width: 5px;
-        background-color: $accent-color;
-
-        top: 50%;
-        transform: translateY(-50%);
-        left: 40px;
-
-        @media screen and (min-width:1440px) {
-        
-            width: 7px;
-    
-        }
-
-        
-    }
-
-    opacity: 0.2;
-
-    &--active {
-        opacity: 1;
-    }
-}
-
-.pagination__count {
-    
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.25;
-    color: $accent-color;
-
-
-    @media screen and (min-width:1440px) {
-
-        font-size: 28px;
-
-    }
-    
 
 }

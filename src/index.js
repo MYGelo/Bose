@@ -25,4 +25,16 @@
       openMenuBtn.setAttribute('aria-expanded', false);
       bodyScrollLock.enableBodyScroll(document.body);
     });
-  })();
+})();
+  
+// Reviews slider
+
+var swiper = new Swiper(".reviews__slider", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "0" + (index + 1) + "</span>";
+    },
+  },
+});
