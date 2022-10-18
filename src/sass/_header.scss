@@ -1,0 +1,35 @@
+.logo {
+    width: 100px;
+    height: 20px;
+}
+
+.logo-wrapper {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.nav__list {
+    @extend %list;
+    max-height: 70px;
+}
+
+.btn-menu-open {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    background-color: aquamarine;
+}
+
+.nav {
+    @media screen and (max-width:1139px) {
+        display: none;
+    }
+}
+
+.header-mobile {    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
