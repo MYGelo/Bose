@@ -24,4 +24,5 @@
 
 .mobile-menu.is-open {
     transform: translateY(0);
+    overflow-y: auto;
 }
