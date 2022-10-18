@@ -1,0 +1,85 @@
+.design {
+  @extend %section;
+  display: block;
+  @media screen and (min-width:768px){
+    flex-direction: row-reverse;
+    display: flex;
+    padding-left: 0;
+    padding-right: 60px;
+    gap: 60px;
+    justify-content: space-between;
+
+  }
+  @media screen and (min-width:1440px){
+    gap: 150px;
+    padding-right: 190px;
+
+  }
+}
+
+.design__heading{
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 1.20;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color:$secondary-text-color;
+
+padding-bottom: 32px;
+@media screen and (min-width:768px){
+  font-size: 30px;
+
+}
+@media screen and (min-width:1440px){
+  font-size: 54px;
+
+}
+}
+
+.design__title{
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.25;
+color:$secondary-text-color;
+
+padding-bottom: 16px;
+
+@media screen and (min-width:1440px){
+  font-size: 28px;
+
+}
+}
+
+.design__desc{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.25;
+color:$primary-text-color;
+padding-bottom: 32px;
+
+@media screen and (min-width:768px){
+  padding-bottom: 40px;
+  font-size: 16px;
+line-height: 1.45;
+}
+
+@media screen and (min-width:1440px){
+  font-size: 20px;
+
+}
+}
+
+.design__box{
+  @media screen and (min-width:768px){
+   display: flex;
+   flex-direction: column;
+    max-width: 294px;
+
+  }
+  @media screen and (min-width:1440px){
+     max-width: 510px;
+   }
+}
