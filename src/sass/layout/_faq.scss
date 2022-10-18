@@ -53,10 +53,6 @@
         line-height: 0.7;
 
         color: $secondary-text-color;
-
-        @media screen and (min-width:768px) {
-           
-        }
     
         @media screen and (min-width:1440px) {   
             
@@ -73,7 +69,7 @@
         content: "";
         display: block;
         margin-left: auto;
-
+        
         width: 42px;
         height: 42px;
 
@@ -82,9 +78,28 @@
         background-repeat: no-repeat;
         background-position: top;
 
+        @media screen and (min-width:768px) {
+            margin-right: 16px;
+        }
+
+        @media screen and (min-width:1440px) {
+        
+            background-size: 42px;
+    
+        }
 
     }
 
+    @media screen and (min-width:768px) {
+        padding-bottom: 28px;
+
+    }
+
+    @media screen and (min-width:1440px) {
+        padding-top: 84px;
+        padding-bottom: 21px;
+
+    }
 }
 
 
@@ -95,6 +110,7 @@
 
     font-size: 14px;
     line-height: 1.28;
+    color: $secondary-text-color;
 
     @media screen and (min-width:321px) and (max-width:767.98px) {
         max-width: 500px;
@@ -108,7 +124,7 @@
     }
 
     @media screen and (min-width:1440px) {
-        max-width: 1000px;
+        max-width: 900px;
 
         font-size: 28px;
         line-height: 1.25;
@@ -116,3 +132,39 @@
     }
 
 }
+
+.faq__overlay-wrapper {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+}
+
+// .faq__overlay {
+
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+
+//     bottom: 0;
+//     left: 0;
+
+//     transform: translateY(100%);
+//     transition: transform 250ms var(--cubic);
+
+//     padding-top: 16px;
+//     padding-bottom: 24px;
+
+//     .faq__item:hover & {
+//         transform: translateY(0);
+
+//     }
+    
+
+//     &-text {
+//         font-size: 20px;
+//         line-height: 1.45;     
+//         color: $primary-text-color;
+        
+    
+//     }
+// }
