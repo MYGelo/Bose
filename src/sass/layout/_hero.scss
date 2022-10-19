@@ -42,7 +42,7 @@ color: $primary-text-color;
         font-size: 42px;
         max-width: 289px;
         margin-right: 65px;
-    }    
+    }
     @media screen and (min-width:1440px){
         font-size: 74px;
         max-width: 600px;
@@ -55,9 +55,14 @@ color: $primary-text-color;
 .wrapper-hero {
     @media screen and (min-width:768px) {
         display: flex;
-        height: 460px;
+        padding-bottom: 50px;
         margin-left: 35px;
-    }    
+    }
+    @media screen and (min-width:1440px) {
+
+      padding-bottom: 85px;
+
+  }
 }
 
 .hero-btn {
@@ -74,12 +79,12 @@ color: $primary-text-color;
     margin-left: auto;
     @media screen and (max-width:767px) {
         margin-bottom: 32px;
-    }    
+    }
     @media screen and (min-width:768px) {
         display: inline-block;
     }
     @media screen and (min-width:1440px){
-        margin-left: 190px;
+        margin-left: 100px;
     }
 }
 
@@ -96,8 +101,8 @@ color: $primary-text-color;
 
 .container--hero {
     @media screen and (min-width:1440px){
-        padding-bottom: 60px;
+        // padding-bottom: 85px;
         display: block;
-        height: 690px;
+        // height: 690px;
     }
 }
