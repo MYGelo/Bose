@@ -36,7 +36,7 @@
   }
 }
 
-.footer-contakt__item {
+.footer-contact__item {
   text-align: end;
   @media screen and (min-width: 768px) {
     text-align: start;
@@ -45,25 +45,35 @@
     display: flex;
   }
 }
-.footer__list {
-  @extend %list;
+.footer__link{
+  @extend %link;
   color: $tranparent-white-color;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+  &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $accent-color;
+        }
+}
+
+.footer__list {
+  @extend %list;
+
   @media screen and (min-width: 1440px) {
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
 }
-.footer-link {
+.footer-tel {
   display: inline-block;
   margin-left: 20px;
   margin-top: 52px;
   margin-bottom: 52px;
 }
-.footer-contakt__link {
+.footer-contact__link {
   @extend %link;
   font-weight: 400;
   font-size: 16px;
