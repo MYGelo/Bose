@@ -1,23 +1,62 @@
+.order {
+  @extend %section;
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 190px;
+    padding-right: 190px;
+    gap: 150px;
+  }
+}
+.order__aria {
+  position: relative;
+}
 .order__bose {
   font-style: normal;
   font-weight: 600;
-  font-size: 54px;
+  font-size: 24px;
   line-height: 1.2;
   color: $secondary-text-color;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 54px;
+  }
 }
 .order__btn {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  height: 400px;
+  width: 100%;
+  align-items: flex-end;
+  @media screen and (min-width: 768px) {
+    height: 550px;
+  }
+  @media screen and (max-width: 1439px) {
+    position: relative;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
 .order__thumb {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .order__item {
-  padding-left: 0px;
+  padding: 0;
+  margin: 0;
 }
 .order__list {
   display: flex;
@@ -30,7 +69,6 @@
   &:first-child {
     border-top: 2px solid $primary-text-color;
   }
-
   @media screen and (min-width: 768px) {
     width: 648px;
   }
@@ -38,7 +76,6 @@
     width: 400px;
   }
 }
-
 .order__link {
   @extend %link;
   font-style: normal;
@@ -53,68 +90,81 @@
   font-size: 24px;
   line-height: 1.2;
   color: $accent-color;
-  padding-left: 20px;
   margin-bottom: 24px;
+  margin-top: 32px;
+  @media screen and (min-width: 1440px) {
+    font-size: 54px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+  }
 }
-
 .order__image {
   margin-top: 88px;
-  margin-left: 20px;
-  margin-right: 20px;
   @media screen and (min-width: 768px) {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-top: 88px;
   }
   @media screen and (min-width: 1440px) {
     margin-top: 170px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 }
-.custom-checkbox__black {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-.label-black {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.custom-checkbox__black > input:checked + span::before {
-  border-color: #0b76ef;
-  background-color: $secondary-text-color;
-}
-.check-icon__black {
-  width: 70px;
-  height: 70px;
-  fill: solid #101010;
-  border: 2px solid #df3d3a;
-  border-radius: 100%;
-  // opacity: 0;
-}
-.custom-checkbox__white {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.label-white {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.check-icon__white {
-  width: 70px;
-  height: 70px;
-  background-color: #dbdbdb;
-  border: 2px solid;
-  border-radius: 100%;
-  // opacity: 0;
+.order__aria {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+  }
 }
 
-.order__picture {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.radio-label {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 1440px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+.black {
+  background-color: #101010;
+  margin-right: 20px;
+}
+.white {
+  background-color: #dbdbdb;
+}
+.radio-input:checked + .radio-label {
+  border-color: #df3d3a;
+}
+.radio-img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 280px;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    width: 648px;
+  }
+  @media screen and (max-width: 1439px) {
+    left: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 700px;
+    top: 0;
+    left: 550px;
+  }
+}
+.radio-input:checked + .radio-label .radio-img {
+  opacity: 1;
 }
