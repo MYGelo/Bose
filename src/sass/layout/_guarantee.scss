@@ -7,6 +7,11 @@
 
                 @media screen and (min-width: 1440px) {
                     padding: 85px 295px 85px 0;
+                    background-image: url(../images/bg-guarantees.png);
+                    background-repeat: no-repeat;
+                    background-size:  250px 111px;
+                    background-position: bottom 130px right ;
+                    
                 }
     
 }
@@ -45,29 +50,23 @@
     @extend %list;
         display: flex;
         flex-direction: column;
+        margin-top: 69px;
         
         @media screen and (min-width: 768px) {
                 max-width: 294px;
             }
                         @media screen and (min-width: 1440px) {
                             max-width: 405px;
+                            margin-top: 87px;
                         }
 
 }
 
 .guarantee__item {
     position: relative;
-    height: 139px;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    @media screen and (min-width: 768px) {
-            height: 151px;
-        }
-                @media screen and (min-width: 1440px) {
-                    height: 179px;
-                }
-    
 }
 
 .guarantee__item::before {
@@ -78,18 +77,18 @@
     height: 13px;
     background-color: $accent-color;
     border-radius: 50%;
-    top: 0;
+    top: -37px;
     
     
 }
 
 .guarantee__item:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 61px;
     @media screen and (min-width: 768px) {
-            margin-bottom: 55px;
+            margin-bottom: 92px;
         }
                 @media screen and (min-width: 1440px) {
-                    margin-bottom: 69px;
+                    margin-bottom: 106px;
                 }
 }
 
@@ -120,4 +119,14 @@
 
 
 
+}
+
+
+.guarantee_img {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
 }
