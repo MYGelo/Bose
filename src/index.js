@@ -25,6 +25,39 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // FAQ Accordion
+
+  const items = document.querySelectorAll('.faq__item');
+  let isTriggerd = false;
+
+  document.addEventListener('mouseover', function (evt) {
+    isTriggerd = true;
+    let target = evt.target;
+    let item = event.target.closest('.faq__item');
+    if (!item) return;
+    item.classList.remove('hide');
+  });
+
+  document.addEventListener('mouseout', function (evt) {
+    let target = evt.target;
+    let item = event.target.closest('.faq__item');
+    if (!item) return;
+    item.classList.add('hide');
+  });
+
+  document.addEventListener('click', function (evt) {
+    if (isTriggerd)
+    {
+      isTriggerd = false;
+      return;
+    }
+    let target = evt.target;
+    let item = event.target.closest('.faq__item');
+    if (!item) return;
+    item.classList.toggle('hide');
+  });
+
 })();
 
 //review
