@@ -77,6 +77,10 @@ color: $primary-text-color;
     color: rgba(255, 255, 255, 0.9);
     margin-right: auto;
     margin-left: auto;
+    &:hover,
+    &:focus{
+        cursor: pointer;
+    }
     @media screen and (max-width:767px) {
         margin-bottom: 32px;
     }

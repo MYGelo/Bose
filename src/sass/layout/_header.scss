@@ -1,8 +1,8 @@
 .logo {
     width: 100px;
     height: 20px;
-    z-index: 1;
-    position: relative;
+    // z-index: 1;
+    // position: relative;
 }
 
 .logo-wrapper {
@@ -27,9 +27,28 @@
     @media screen and (min-width:1440px){
         display: none;
     }
+    &__icon{
+        fill: rgba(255, 255, 255, 0.8);
+    }
+    &__icon:hover,
+    &__icon:focus {
+        cursor: pointer;
+        color: $accent-color;
+        fill: currentColor;
+    }
+
 }
 
 .nav {
+    &__link{
+        @extend %link;
+        color: $primary-text-color;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $accent-color;
+        }
+    }
     @media screen and (max-width:1439px) {
         display: none;
     }
@@ -84,4 +103,14 @@
     justify-content: space-between;
     height: 120px;
     }    
+}
+
+.logo__icon {
+    fill: #e7e7e7;
+}
+
+.logo-link:hover .logo__icon,
+.logo-link:focus .logo__icon {
+    color: $accent-color;
+    fill:currentColor;
 }
