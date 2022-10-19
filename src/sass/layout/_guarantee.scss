@@ -1,0 +1,123 @@
+.guarantee__wrapper {
+    padding: 20px;
+    @media screen and (min-width: 768px) {
+            padding: 50px 60px 50px 0;
+            
+        }
+
+                @media screen and (min-width: 1440px) {
+                    padding: 85px 295px 85px 0;
+                }
+    
+}
+
+.guarantee__position {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap: 60px;
+        }
+}
+
+.guarantee__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+            font-size: 30px;
+            text-align: right;
+            margin-right: 60px;
+        }
+
+                @media screen and (min-width: 1440px) {
+                    font-size: 54px;
+                    margin-bottom: 50px;
+                }
+}
+
+.guarantee__list {
+    @extend %list;
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: 768px) {
+                max-width: 294px;
+            }
+                        @media screen and (min-width: 1440px) {
+                            max-width: 405px;
+                        }
+
+}
+
+.guarantee__item {
+    position: relative;
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    @media screen and (min-width: 768px) {
+            height: 151px;
+        }
+                @media screen and (min-width: 1440px) {
+                    height: 179px;
+                }
+    
+}
+
+.guarantee__item::before {
+    position: absolute;
+    content: '';
+    max-width: 13px;
+    width: 100%;
+    height: 13px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    top: 0;
+    
+    
+}
+
+.guarantee__item:not(:last-child) {
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 55px;
+        }
+                @media screen and (min-width: 1440px) {
+                    margin-bottom: 69px;
+                }
+}
+
+.guarantee__title-description {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    color: $secondary-text-color;
+    margin-bottom: 16px;
+@media screen and (min-width: 1440px) {
+        font-size: 28px;
+    }
+
+}
+
+.guarantee__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: $primary-text-color;
+    @media screen and (min-width: 768px) {
+            font-size: 16px;
+    }
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+            line-height: 145%;
+        }
+
+
+
+}
