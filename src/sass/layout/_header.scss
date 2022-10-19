@@ -1,8 +1,8 @@
 .logo {
     width: 100px;
     height: 20px;
-    z-index: 1;
-    position: relative;
+    // z-index: 1;
+    // position: relative;
 }
 
 .logo-wrapper {
@@ -30,6 +30,15 @@
 }
 
 .nav {
+    &__link{
+        @extend %link;
+        color: $primary-text-color;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $accent-color;
+        }
+    }
     @media screen and (max-width:1439px) {
         display: none;
     }
