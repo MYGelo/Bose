@@ -77,9 +77,19 @@ color: $primary-text-color;
     color: rgba(255, 255, 255, 0.9);
     margin-right: auto;
     margin-left: auto;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+    transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+      color 0.5s ease 0s, background-color 0.5s ease;   
     &:hover,
     &:focus{
-        cursor: pointer;
+        color: rgba(255, 255, 255, 1);
+        background-color: #b5302d;
+        background-position: -100% 100%;
+    
+        // cursor: pointer;
+        // background-position: 100%;
+        // background: #b5302d;
     }
     @media screen and (max-width:767px) {
         margin-bottom: 32px;

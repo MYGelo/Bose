@@ -13,6 +13,7 @@
 .mobile__link{
     @extend %link;
     color: $primary-text-color;
+    transition: color 250ms linear;
     &:hover,
     &:focus {
         color: $accent-color;
@@ -44,18 +45,21 @@
     width: 30px;
     height: 30px;
     border: none;
-    // margin-left: auto;
-    // margin-bottom: 52px;
     &__icon{
+        transition: fill 250ms linear;
         fill:rgba(255, 255, 255, 0.8);
+        color: $accent-color;
     }
+    // &:hover &__icon{
+    //     cursor: pointer;
+    //     color: $accent-color;
+    //     fill: currentColor;
+    // }
     &__icon:hover,
     &__icon:focus {
-        cursor: pointer;
-        color: $accent-color;
+        cursor: pointer;        
         fill: currentColor;
     }
-
 }
 
 
@@ -81,13 +85,8 @@
 
 .mobile-menu.is-open {
     transform: translateY(0);
-    overflow-y: none
-    ;
+    overflow-y: none;
 }
-
-.mobile__link:active .mobile-menu {
-    transform: translateY(-100%);
-} 
 
 .logo-link:hover .logo__icon,
 .logo-link:focus .logo__icon {

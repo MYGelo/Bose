@@ -29,20 +29,23 @@
     }
     &__icon{
         fill: rgba(255, 255, 255, 0.8);
+        color: $accent-color;
+        transition: fill 250ms linear;
     }
     &__icon:hover,
     &__icon:focus {
         cursor: pointer;
-        color: $accent-color;
         fill: currentColor;
+        
     }
 
 }
 
 .nav {
     &__link{
-        @extend %link;
+        @extend %link;        
         color: $primary-text-color;
+        transition: color 250ms liner;
         &:hover,
         &:focus {
             cursor: pointer;
@@ -107,10 +110,16 @@
 
 .logo__icon {
     fill: #e7e7e7;
+    color: $accent-color;
+    transition: fill 250ms linear;
 }
 
+// .btn-menu-open__icon {
+//     transition: fill 250ms linear;
+// }
+
 .logo-link:hover .logo__icon,
-.logo-link:focus .logo__icon {
-    color: $accent-color;
+.logo-link:focus .logo__icon {    
     fill:currentColor;
 }
+
