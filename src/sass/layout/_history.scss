@@ -1,4 +1,5 @@
 .history {
+  @extend %section;
     @media screen and (min-width: 768px) {
         padding-left: 60px;
         padding-right: 0;
@@ -24,7 +25,7 @@
         width: 294px;
         gap: 150px;
     }
-    
+
 }
 
 .history-title {
@@ -131,7 +132,7 @@
         margin-right: 58px;
         margin-bottom: 0;
     }
-    
+
     @media screen and (min-width: 1440px) {
         margin-right: 260px;
         margin-bottom: 0;
