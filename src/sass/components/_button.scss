@@ -2,7 +2,7 @@
   // use single stile btn__item to the item
   // <button class="btn__item">order</button>
   display: block;
-
+cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25px;
@@ -26,6 +26,7 @@
     color: rgba(255, 255, 255, 1);
     background-color: #b5302d;
     background-position: -100% 100%;
+
   }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +42,7 @@
   // use stiles "btn__item draw meet" to the item
   // <button class="btn__item-feedback draw meet">order</button>
   display: block;
-
+  cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25px;
@@ -94,9 +95,11 @@
     width: 510px;
     height: 68px;
   }
+  cursor: pointer;
 }
 
 .draw {
+  cursor: pointer;
   transition: color 0.25s;
 
   &::before,

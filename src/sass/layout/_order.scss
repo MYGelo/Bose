@@ -33,7 +33,7 @@
   display: flex;
   margin-bottom: 32px;
   margin-top: 32px;
-  height: 400px;
+  height: 350px;
   width: 100%;
   align-items: flex-end;
   @media screen and (min-width: 768px) {
@@ -123,7 +123,10 @@
   border-radius: 100%;
   border: 2px solid transparent;
   cursor: pointer;
-
+  @media screen and (min-width: 768px) {
+    width: 58px;
+    height: 58px;
+  }
   @media screen and (min-width: 1440px) {
     width: 70px;
     height: 70px;
@@ -136,8 +139,9 @@
 .white {
   background-color: #dbdbdb;
 }
+
 .radio-input:checked + .radio-label {
-  border-color: #df3d3a;
+  border-color: $accent-color;
 }
 .radio-img {
   position: absolute;
