@@ -1,11 +1,21 @@
 .mobile__list {
-    @extend %list;
+    @extend %list;    
+}
+
+.mobile__item:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .btn-menu-close {
-    width: 24px;
-    height: 24px;
-    background-color: rgb(236, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: auto;
+    margin-bottom: 52px;
 }
 
 .mobile-menu {
@@ -15,8 +25,16 @@
     transform: translateY(-100%);
     width: 100%;
     height: 100%;
-    background: rgb(108, 150, 136);
+    background: #191919;
     transition: transform 250ms linear;
+    padding: 43px 60px;
+    margin-right: 5px;
+    @media screen and (max-width:767px) {
+        padding: 28px 20px;
+    }
+    @media screen and (min-width:1440px) {
+        display: none;
+    }
     // &.is-open {
     //     transform: translateY(0);
     // }
@@ -24,5 +42,6 @@
 
 .mobile-menu.is-open {
     transform: translateY(0);
-    overflow-y: auto;
+    overflow-y: none
+    ;
 }
