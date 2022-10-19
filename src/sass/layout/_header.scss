@@ -27,6 +27,16 @@
     @media screen and (min-width:1440px){
         display: none;
     }
+    &__icon{
+        fill: rgba(255, 255, 255, 0.8);
+    }
+    &__icon:hover,
+    &__icon:focus {
+        cursor: pointer;
+        color: $accent-color;
+        fill: currentColor;
+    }
+
 }
 
 .nav {
@@ -93,4 +103,14 @@
     justify-content: space-between;
     height: 120px;
     }    
+}
+
+.logo__icon {
+    fill: #e7e7e7;
+}
+
+.logo-link:hover .logo__icon,
+.logo-link:focus .logo__icon {
+    color: $accent-color;
+    fill:currentColor;
 }

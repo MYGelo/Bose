@@ -13,6 +13,10 @@
 .mobile__link{
     @extend %link;
     color: $primary-text-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .logo-wrapper{
@@ -42,11 +46,18 @@
     border: none;
     // margin-left: auto;
     // margin-bottom: 52px;
+    &__icon{
+        fill:rgba(255, 255, 255, 0.8);
+    }
+    &__icon:hover,
+    &__icon:focus {
+        cursor: pointer;
+        color: $accent-color;
+        fill: currentColor;
+    }
+
 }
 
-.mobile__link:active .mobile-menu {
-    transform: translateY(-100%);
-} 
 
 .mobile-menu {
     position: fixed;
@@ -72,4 +83,14 @@
     transform: translateY(0);
     overflow-y: none
     ;
+}
+
+.mobile__link:active .mobile-menu {
+    transform: translateY(-100%);
+} 
+
+.logo-link:hover .logo__icon,
+.logo-link:focus .logo__icon {
+    color: $accent-color;
+    fill:currentColor;
 }
