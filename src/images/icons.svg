@@ -32,5 +32,13 @@
 <symbol id="icon-burger-menu" viewBox="0 0 54 32">
 <path d="M54.154 30.823h-54.154v-4.785h54.154v4.785zM54.154 18.86h-54.154v-4.785h54.154v4.785zM54.154 6.897h-54.154v-4.788h54.154v4.788z"></path>
 </symbol>
+<symbol id="icon-Vector" viewBox="0 0 31 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.783l27.826-27.826M29.217 1.957h-27.826M29.217 1.957v27.826"></path>
+</symbol>
+9:22
+<symbol id="icon-Ellipse" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M31.273 16c0 8.435-6.838 15.273-15.273 15.273s-15.273-6.838-15.273-15.273c0-8.435 6.838-15.273 15.273-15.273s15.273 6.838 15.273 15.273z"></path>
+</symbol>
 </defs>
 </svg>
+
