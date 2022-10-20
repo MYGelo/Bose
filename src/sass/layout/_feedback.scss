@@ -99,6 +99,8 @@
     line-height: 1.25;
     letter-spacing: 0em;
 
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus-within,
     &:hover,
     &:focus {
@@ -143,6 +145,7 @@
   &__check--hide {
     position: absolute;
     opacity: 0;
+
     &:checked + .feedback__check {
       content: ' ';
       background-image: url('../images/check-true.svg');
@@ -168,6 +171,10 @@
   }
 }
 
+// input:hover {
+//   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
@@ -176,6 +183,15 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px $bcg-color inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-input:hover::-webkit-input-placeholder {
+
+input:hover::placeholder {
   color: $primary-text-color;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:hover::placeholder {
+  color: $primary-text-color;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
