@@ -104,7 +104,7 @@
     justify-content: center;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767.9px) {
         display: none;
     }
 }
@@ -115,7 +115,7 @@
     margin-bottom: 32px;
     width: 354px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767.9px) {
         display: none;
     }
 
@@ -168,12 +168,13 @@
 
 
 .history-quote {
+    position: relative;
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 125%;
-    /* or 25px */
 
     color: #E7E7E7;
 
@@ -188,13 +189,25 @@
     }
 }
 
+.history-quote::before {
+    position: absolute;
+    top: -75px;
+
+    content: "";
+    display: inline-block;
+    width: 34px;
+    height: 25px;
+    background-image: url(./../images/history/’’.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .history-signature {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
-    /* identical to box height, or 18px */
 
     color: rgba(255, 255, 255, 0.4);
 
