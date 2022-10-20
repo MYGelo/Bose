@@ -1,16 +1,18 @@
 .history {
   @extend %section;
-    @media screen and (min-width: 768px) {
-        padding-left: 60px;
-        padding-right: 0;
-    }
 
-    @media screen and (min-width: 1440px) {
-        padding-left: 190px;
-        padding-right: 0;
-    }
+}
+.history-box{
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 0;
 }
 
+@media screen and (min-width: 1440px) {
+    padding-left: 190px;
+    padding-right: 0;
+}
+}
 .history__container {
 
     @media screen and (min-width: 768px) {

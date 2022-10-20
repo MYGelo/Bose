@@ -1,6 +1,6 @@
 .technology {
   @extend %section;
- 
+
 
 }
 .technology-container{
@@ -10,6 +10,7 @@
     padding-right: 0;
     padding-left: 60px;
     justify-content: flex-start;
+    gap: 60px;
 
   }
   @media screen and (min-width:1440px){
