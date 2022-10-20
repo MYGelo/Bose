@@ -130,6 +130,10 @@
     justify-content: center;
     margin-bottom: 32px;
 
+    @media screen and (max-width: 767.9px) {
+        margin-bottom: 81px;
+    }
+
     @media screen and (min-width: 768px) {
         margin-right: 58px;
         margin-bottom: 0;
@@ -200,6 +204,11 @@
     background-image: url(./../images/history/’’.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 767.9px) {
+        top: -55px;
+    }
+    
 }
 
 .history-signature {
