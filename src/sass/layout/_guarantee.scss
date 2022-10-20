@@ -4,12 +4,12 @@
 .guarantee__wrapper {
     // padding: 20px;
     @media screen and (min-width: 768px) {
-            padding: 50px 60px 50px 0;
+            padding:0 60px 0 0;
 
         }
 
                 @media screen and (min-width: 1440px) {
-                    padding: 85px 295px 85px 0;
+                    padding: 0 295px 0 0;
                     background-image: url(../images/bg-guarantees.png);
                     background-repeat: no-repeat;
                     background-size:  250px 111px;
