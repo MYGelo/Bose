@@ -1,19 +1,21 @@
 .reviews {
     @extend %section;
-    
-    @media screen and (min-width:768px) {
-        padding-left: 60px;
-        padding-right: 60px;
 
-    }
 
-    @media screen and (min-width:1440px) {
-        padding-left: 0;
-        padding-right: 112px;
+}
+.reviews__container{
+  @media screen and (min-width:768px) {
+    padding-left: 60px;
+    padding-right: 60px;
 
-    }
 }
 
+@media screen and (min-width:1440px) {
+    padding-left: 0;
+    padding-right: 112px;
+
+}
+}
 .reviews__slider {
     position: relative;
 
@@ -23,9 +25,9 @@
     position: static;
     display: flex;
     width: fit-content;
-   
+
     @media screen and (min-width:1440px) {
-    
+
         position: absolute;
         left: 1070px;
         bottom: 0;
@@ -51,7 +53,7 @@
     &:not(:last-child) {
         margin-right: 39px;
     }
-    
+
     &:not(:last-child)::after {
         position: absolute;
         content: "";
@@ -81,7 +83,7 @@
 }
 
 .reviews__slider .swiper-pagination-bullet-active {
-    
+
     opacity: 1;
 
     &::after {
@@ -114,14 +116,14 @@
 
     @media screen and (min-width:1440px) {
         display: flex;
-    
+
     }
 
 }
 
 .slider__video-wrapper {
     margin-bottom: 32px;
-    
+
     @media screen and (min-width:1440px) {
         margin-bottom: 0;
 
@@ -157,12 +159,12 @@
 .slider__descr-wrapper {
 
     @media screen and (min-width:1440px) {
-        
+
         margin-top: 115px;
         margin-left: 150px;
-    
+
     }
-    
+
 }
 
 .reviews__subtitle {
@@ -183,7 +185,7 @@
 }
 
 .reviews__text {
-    
+
     max-width: 260px;
     width: 100%;
 

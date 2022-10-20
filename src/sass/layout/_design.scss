@@ -1,13 +1,14 @@
 .design {
   @extend %section;
   display: block;
+}
+.design-container{
   @media screen and (min-width:768px){
     flex-direction: row-reverse;
     display: flex;
     padding-left: 0;
     padding-right: 60px;
-    gap: 60px;
-    justify-content: space-between;
+    justify-content: flex-start;
 
   }
   @media screen and (min-width:1440px){
@@ -16,7 +17,6 @@
 
   }
 }
-
 .design__heading{
 font-style: normal;
 font-weight: 600;
