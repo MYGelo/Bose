@@ -2,7 +2,7 @@
   // use single stile btn__item to the item
   // <button class="btn__item">order</button>
   display: block;
-cursor: pointer;
+  cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25px;
@@ -26,7 +26,6 @@ cursor: pointer;
     color: rgba(255, 255, 255, 1);
     background-color: #b5302d;
     background-position: -100% 100%;
-
   }
 
   @media screen and (min-width: 768px) {
@@ -89,7 +88,7 @@ cursor: pointer;
   }
 }
 
-.btn__item-feedback--dimensions {
+.btn--dimensions {
   //  for btn SEND
   @media screen and (min-width: 1440px) {
     width: 510px;
