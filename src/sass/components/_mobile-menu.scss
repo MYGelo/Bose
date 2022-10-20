@@ -1,8 +1,8 @@
 .mobile__list {
-    @extend %list;    
+    @extend %list;
         margin-left: auto;
         margin-right: auto;
-    @media screen and (max-width:767px) {        
+    @media screen and (max-width:767px) {
         max-width: 440px;
     }
     @media screen and (min-width:768px) {
@@ -13,7 +13,7 @@
 .mobile__link{
     @extend %link;
     color: $primary-text-color;
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: $accent-color;
@@ -46,7 +46,7 @@
     height: 30px;
     border: none;
     &__icon{
-        transition: fill 250ms linear;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill:rgba(255, 255, 255, 0.8);
         color: $accent-color;
     }
@@ -57,7 +57,7 @@
     // }
     &__icon:hover,
     &__icon:focus {
-        cursor: pointer;        
+        cursor: pointer;
         fill: currentColor;
     }
 }
@@ -71,7 +71,7 @@
     width: 100%;
     height: 100%;
     background: #191919;
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 43px 60px;
     margin-right: 5px;
     @media screen and (max-width:767px) {
