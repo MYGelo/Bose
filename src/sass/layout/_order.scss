@@ -1,5 +1,8 @@
 .order {
   @extend %section;
+
+}
+.order-box{
   @media screen and (min-width: 768px) {
     padding-left: 60px;
     padding-right: 60px;
@@ -12,6 +15,7 @@
 }
 .order__aria {
   position: relative;
+
 }
 .order__bose {
   font-style: normal;

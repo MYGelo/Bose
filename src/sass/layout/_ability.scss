@@ -68,6 +68,9 @@
   @extend %list;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1439px) {
+    margin-bottom: 16px;
+  }
 }
 
 .page-ability__item {

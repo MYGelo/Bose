@@ -1,5 +1,7 @@
 .hero{
   @extend %section;
+  padding-top: 0;
+
 }
 
 
@@ -62,12 +64,14 @@ color: $primary-text-color;
 .wrapper-hero {
     @media screen and (min-width:768px) {
         display: flex;
+        justify-content: space-between;
 
     }
 
 }
 
 .hero-btn {
+  cursor:pointer;
     display: block;
     max-width: 280px;
     width: 100%;

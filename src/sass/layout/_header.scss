@@ -6,13 +6,13 @@
 }
 
 .logo-wrapper {
-    max-height: 70px;
+    // max-height: 70px;
     overflow: hidden;
 }
 
 .nav__list {
     @extend %list;
-    max-height: 70px;
+    // max-height: 70px;
 }
 
 .btn-menu-open {
@@ -104,7 +104,7 @@
         display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
+    // height: 120px;
     }
 }
 
