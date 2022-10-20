@@ -150,3 +150,9 @@
     fill:currentColor;
 }
 
+.header-sticky{
+    position: sticky;
+    top: -1px;
+    background: #191919;
+    z-index: 2;
+}
