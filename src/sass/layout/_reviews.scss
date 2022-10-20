@@ -1,3 +1,8 @@
+// .swiper,
+// .swiper-wrapper {
+//     z-index: 0;
+// }
+
 .reviews {
     @extend %section;
 
@@ -90,9 +95,6 @@
         opacity: 1;
     }
 }
-
-
-
 
 .reviews__title {
     @extend %section-title;
