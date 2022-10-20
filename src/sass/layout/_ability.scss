@@ -1,15 +1,18 @@
-.page-ability__wrapper {
-  padding: 20px;
+.page-ability{
+  @extend %section;
+}
 
-  @media screen and (min-width: 768px) {
-    padding: 50px 60px;
-  }
+.page-ability__wrapper {
+
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 50px 60px;
+  // }
 
   @media screen and (min-width: 1440px) {
     padding-left: 190px;
     padding-right: 269px;
-    padding-bottom: 85px;
-    padding-top: 85px;
+
   }
 
 
@@ -44,7 +47,7 @@
 
 
 .page-ability__list {
-  @extend %list;
+
   display: flex;
   flex-direction: column;
 
@@ -56,11 +59,13 @@
 }
 
 .page-ability__item-right {
+  @extend %list;
   display: flex;
   flex-direction: column;
 }
 
 .page-ability__item-left {
+  @extend %list;
   display: flex;
   flex-direction: column;
 }
@@ -72,6 +77,7 @@
   line-height: 125%;
   color: $primary-text-color;
   margin-bottom: 16px;
+  
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -80,7 +86,7 @@
   @media screen and (min-width: 1440px) {
     font-size: 20px;
     line-height: 145%;
-    
+
   }
 
 

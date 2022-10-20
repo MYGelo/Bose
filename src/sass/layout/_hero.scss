@@ -1,3 +1,10 @@
+.hero{
+  @extend %section;
+}
+
+
+
+
 .hero-descr {
     font-weight: 400;
 font-size: 14px;
@@ -55,14 +62,9 @@ color: $primary-text-color;
 .wrapper-hero {
     @media screen and (min-width:768px) {
         display: flex;
-        padding-bottom: 50px;
-        margin-left: 35px;
+
     }
-    @media screen and (min-width:1440px) {
 
-      padding-bottom: 85px;
-
-  }
 }
 
 .hero-btn {
@@ -80,13 +82,13 @@ color: $primary-text-color;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
     transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
-      color 0.5s ease 0s, background-color 0.5s ease;   
+      color 0.5s ease 0s, background-color 0.5s ease;
     &:hover,
     &:focus{
         color: rgba(255, 255, 255, 1);
         background-color: #b5302d;
         background-position: -100% 100%;
-    
+
         // cursor: pointer;
         // background-position: 100%;
         // background: #b5302d;
@@ -113,10 +115,10 @@ color: $primary-text-color;
 }
 }
 
-.container--hero {
-    @media screen and (min-width:1440px){
-        // padding-bottom: 85px;
-        display: block;
-        // height: 690px;
-    }
-}
+// .container--hero {
+//     @media screen and (min-width:1440px){
+//         // padding-bottom: 85px;
+//         display: block;
+//         // height: 690px;
+//     }
+// }
